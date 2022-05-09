@@ -19,9 +19,21 @@ body {
 .main-content {
   display: flex;
   align-items: center;
+  flex-wrap: wrap-reverse;
   gap: 15rem;
 }
+@media (max-width: 768px) {
+  .main-content {
+    justify-content: center;
+    gap: 2rem;
+  }
+}
 
+@media (max-width: 768px) {
+  .intro {
+    text-align: center;
+  }
+}
 .intro p {
   font-weight: bold;
 }

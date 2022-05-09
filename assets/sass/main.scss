@@ -1,6 +1,7 @@
 @import 'reset';
 @import 'animation';
 @import 'variables';
+@import 'mixins';
 
 body {
   display: flex;
@@ -12,10 +13,20 @@ body {
 .main-content {
   display: flex;
   align-items: center;
+  flex-wrap: wrap-reverse;
   gap: 15rem;
+
+  @include media(768px) {
+    justify-content: center;
+    gap: 2rem;
+  }
 }
 
 .intro {
+  @include media(768px) {
+    text-align: center;
+  }
+
   p {
     font-weight: bold;
   }
