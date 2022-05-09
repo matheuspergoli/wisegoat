@@ -9,16 +9,60 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
-h1 {
-  color: #BAA193;
-  font-size: 5rem;
-  text-align: center;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-p {
+.main-content {
+  display: flex;
+  align-items: center;
+  gap: 15rem;
+}
+
+.intro p {
+  font-weight: bold;
+}
+.intro p:nth-of-type(1) {
+  color: #BAA193;
+  font-size: 5rem;
+}
+.intro p:nth-of-type(2) {
   color: #72005F;
-  font-size: 2.5rem;
-  text-align: center;
+  font-size: 10rem;
+}
+.intro a {
+  display: block;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 3rem;
+  margin-top: 5rem;
+  padding: 1rem 4rem;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: #72005F;
+}
+
+.img-bode {
+  width: 30rem;
+  animation-name: move;
+  animation-duration: 1000ms;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes move {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-50px);
+  }
+}
+.img-bode img {
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

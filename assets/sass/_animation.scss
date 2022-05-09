@@ -1,0 +1,16 @@
+@mixin animation-move {
+  @keyframes move {
+    from {
+      transform: translateY(0px);
+    }
+  
+    to {
+      transform: translateY(-50px);
+    }
+  }
+
+  animation-name: move;
+  animation-duration: 1000ms;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
