@@ -9,4 +9,10 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+h1 {
+  color: #BAA193;
+  font-size: 5rem;
+  text-align: center;
+}
+
 /*# sourceMappingURL=main.css.map */
