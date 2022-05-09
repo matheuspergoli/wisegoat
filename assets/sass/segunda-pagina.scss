@@ -1,0 +1,72 @@
+@import 'reset';
+@import 'variables';
+@import 'animation';
+@import 'mixins';
+
+body {
+  padding: 1.5rem;
+}
+
+.voltar-link {
+  display: block;
+  margin: 2rem;
+  text-decoration: none;
+
+  p {
+    font-weight: bold;
+  }
+
+  p:nth-of-type(1) {
+    color: $bege;
+    font-size: 3rem;
+  }
+
+  p:nth-of-type(2) {
+    color: $roxo;
+    font-size: 5rem;
+  }
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  gap: 10rem;
+  padding: 5rem;
+  max-width: 100rem;
+  border-radius: 25px;
+  margin: 15rem auto 0 auto;
+  background-color: $bege-claro;
+
+  @include media(768px) {
+    gap: 2rem;
+    margin-top: 5rem;
+  }
+}
+
+.frase-container {
+  width: 30rem;
+
+  blockquote {
+    color: $roxo;
+    font-size: 4rem;
+    font-weight: bold;
+  }
+
+  cite {
+    display: block;
+    color: $bege;
+    font-size: 3rem;
+    text-align: right;
+  }
+}
+
+.bode-img {
+  width: 25rem;
+  @include animation-move;
+
+  img {
+    max-width: 100%;
+  }
+}
